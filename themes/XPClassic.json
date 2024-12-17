@@ -1,0 +1,13 @@
+{
+    "bg": {
+        "hovered_item": "#316ac5",
+        "selected_file": "#316ac5",
+        "top_settings_bar":  "#efede0"
+    },
+    "text": {
+        "hovered_item": "#fff"
+    },
+    "border_color": {
+        "context_menu_separator": "#ceccc3"
+    }
+}
