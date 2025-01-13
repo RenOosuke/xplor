@@ -1,0 +1,11 @@
+/node_modules/
+/public/build/
+
+.DS_Store
+/DevFiles
+/NW_Cache/*nwjs*
+/NW_Cache/package.nw
+/NW_Cache/NWTemp
+/Research/Icons
+/SourceCode/NWProfile
+/BuiltApp

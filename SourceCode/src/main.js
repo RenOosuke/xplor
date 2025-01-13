@@ -1,10 +1,7 @@
-import App from './App.svelte';
+import WrappedApp from './WrappedApp.svelte';
 
-const app = new App({
-	target: document.body,
-	props: {
-		name: 'world'
-	}
+const app = new WrappedApp({
+	target: document.body
 });
 
 export default app;

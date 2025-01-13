@@ -1,0 +1,182 @@
+/* AppBorder */
+.border_shadow {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.app_borders, .outer_border {
+    border-radius: .5rem; /* APP border-radius*/
+}
+
+.app_borders {
+    border-width: 1.7px; /* APP border width*/
+}
+
+.outer_border::after {
+    padding: 1.7px; /* APP border width*/
+    background: linear-gradient(160deg, rgba(20,52,78,1) 0%, rgba(16,36,53,1) 100%);
+    border-radius: .5rem; /* APP border-radius*/
+}
+
+.texture_layer {
+    background-image: url('./AeroGlassTexture.png');
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.color_layer {
+    background: rgba(64, 158, 254, 0.27);
+    background-blend-mode: overlay; 
+}
+
+.color_layer::after {
+    padding: 1.5px;
+    background: linear-gradient(160deg, rgba(249,250,253,1) 0%, rgba(202,226,249,1) 15%, rgba(44,211,254,1) 100%);
+    border-radius: calc(.5rem + .1rem);
+}
+
+/* WindowDragBar */
+.control_bar {
+    height: 3rem;
+    padding-left: none;
+    padding-right: 1rem;
+}
+
+.control_buttons {
+    height: 1.1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.minimize_icon {
+    background-image: url('control_buttons/minimize.svg');
+}
+
+.maximize_icon {
+    background-image: url('control_buttons/maximize.svg');
+}
+
+.unmaximize_icon {
+    background-image: url('control_buttons/unmaximize.svg');
+}
+
+.close_icon {
+    background-image: url('control_buttons/close.svg');
+}
+
+.minimize_button:hover .primary_button_border, .maximize_button:hover .primary_button_border {
+    background-image: url('./control_buttons/primary_button_border_hovered.svg');
+}
+
+.primary_button_border {
+    /* background-size: cover; */
+    background-image: url('./control_buttons/primary_button_border.svg');
+}
+
+.destructive_button_border {
+    /* background-size: cover; */
+    background-image: url('./control_buttons/destructive_button_border.svg');
+}
+
+.close_button:hover {
+    background-image: url('./control_buttons/destructive_button_border.svg');
+}
+
+
+.control_button:not(:last-child) {
+    margin-right: .35rem;
+}
+
+.minimize_button {
+    width: 2.05rem;
+    border-radius: .2rem;
+}
+
+.minimize_button .element_border_highlight::after {
+    border-radius: .2rem;
+}
+
+.minimize_button, .maximize_button {
+    background: linear-gradient(180deg, rgba(193,211,230,1) 0%, rgba(190,211,232,1) 45%, rgba(152,177,204,1) 50%, rgba(185,209,234,1) 100%);
+}
+
+.minimize_button:hover, .maximize_button:hover {
+    background: linear-gradient(180deg, rgba(170,213,243,1) 0%, rgba(125,190,233,1) 45%, rgba(45,115,163,1) 50%, rgba(36,198,235,1) 100%);
+}
+
+.minimize_button:active, .maximize_button:active {
+    background: linear-gradient(180deg, rgba(127,154,172,1) 0%, rgba(90,116,138,1) 35%, rgba(32,59,82,1) 40%, rgba(103,230,228,1) 100%);
+}
+
+.maximize_button::after {
+    background: url("control_buttons/primary_button_border.svg");
+}
+
+.maximize_button {
+    width: 2.05rem;
+    border-radius: .2rem;
+}
+
+.maximize_button::after {
+    border-radius: .2rem;
+}
+
+.close_button {
+    width: 2.05rem;
+    background: linear-gradient(180deg, rgba(233,169,156,1) 0%, rgba(222,146,132,1) 45%, rgba(184,67,44,1) 50%, rgba(213,133,118,1) 100%);
+    border-radius: .2rem;
+}
+
+.close_button:hover {
+    background: linear-gradient(180deg, rgba(251,199,190,1) 0%, rgba(250,164,149,1) 45%, rgba(210,35,2,1) 50%, rgba(234,161,87,1) 100%);
+}
+
+.close_button:active {
+    background: linear-gradient(180deg, rgba(201,158,135,1) 0%, rgba(187,129,104,1) 45%, rgba(128,23,0,1) 50%, rgba(188,142,72,1) 100%);
+}
+
+.close_button::after {
+    background: url("control_buttons/destructive_button_border.svg");
+    border-radius: .2rem;
+}
+
+
+/* WrappedApp */
+.frameless {
+    padding-left: 0.8rem; /* --app_vertical_border_width */
+    padding-right: 0.8rem; /* --app_vertical_border_width */
+    padding-bottom: 0.4rem; /* --app_horizontal_border_width */
+    padding-top: 3rem; /* --app_top_border_width */
+    height: calc(100% - 0.4rem - 3rem); /* 100% - --app_horizontal_border_width - --app_top_border_width */
+}
+
+/* CommandBar */
+.command_bar {
+    background-color: #efede0; /* --command_bar_bg */
+    border-bottom: 1px solid #d8d2bd; /* --command_bar_bottom */
+    border-top: none; /* --command_bar_top */
+    border-left: none; /* --command_bar_left */
+    border-right: none; /* --command_bar_right */
+}
+
+.single_tab_button:hover {
+    background-color: #316ac5; /* --hovered_item_bg */
+    color: #fff; /* --hovered_item_color */
+}
+
+
+/* Menu */
+.single_menu_option {
+    color: #000000;
+}
+
+.single_menu_option:hover{
+    background-color: #316ac5;
+}
+
+.separator_line {
+    background: #ceccc3;
+}
+
+/* NavigationPane */
+
+

@@ -9,6 +9,7 @@ body {
 	margin: 0;
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	overflow-x: hidden;
 }
 
 a {
@@ -73,4 +74,36 @@ button {
 	margin: 0;
 	border: none;
 	border-radius: 0;
+}
+
+.element_border_shadow::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	padding: var(--app_border_radius);
+	background: var(--app_dark_outer_border);
+
+	-webkit-mask: linear-gradient(black, black) content-box, linear-gradient(white, white);
+	-webkit-mask-composite: xor;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.element_border_highlight::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	padding: var(--app_border_radius);
+	background: var(--element_highlight_border_color);
+
+	-webkit-mask: linear-gradient(black, black) content-box, linear-gradient(white, white);
+	-webkit-mask-composite: xor;
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
 }

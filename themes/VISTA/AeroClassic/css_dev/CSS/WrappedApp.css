@@ -1,0 +1,7 @@
+.frameless {
+    padding-left: 0.8rem; /* --app_vertical_border_width */
+    padding-right: 0.8rem; /* --app_vertical_border_width */
+    padding-bottom: 0.4rem; /* --app_horizontal_border_width */
+    padding-top: 3rem; /* --app_top_border_width */
+    height: calc(100% - 0.4rem - 3rem); /* 100% - --app_horizontal_border_width - --app_top_border_width */
+}

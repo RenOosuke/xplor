@@ -1,0 +1,269 @@
+Context menu
+.border-color-context-menu-separator {
+    background: #ceccc3;
+}
+
+.text-context-menu-item {
+    color: #000000;
+}
+/* Background Colors */
+.bg-hovered-item:hover {
+    background-color: #316ac5;
+}
+
+.bg-selected-file {
+    background-color: #316ac5;
+}
+
+.bg-command-bar {
+    background-color: #efede0;
+}
+
+.bg-toolbar {
+    background-color: #efede0;
+}
+
+.bg-navigation-pane {
+    background: linear-gradient(rgb(123, 162, 231) 0%, rgb(99, 117, 214) 100%);
+}
+
+/* Text Colors */
+.text-hovered-item {
+    color: #fff;
+}
+
+
+/* Border Colors */
+
+
+.border-color-element-highlight {
+    border-color: rgba(255, 255, 255, 0.75);
+}
+
+.border-color-element-shadow {
+    border-color: rgba(0, 0, 11, 1);
+}
+
+/* Borders */
+.border-command-bar {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #d8d2bd;
+}
+
+.border-toolbar {
+    border-top: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #d8d2bd;
+}
+
+/* App Borders */
+.app-borders-vertical {
+    width: 0.4rem;
+}
+
+.app-borders-horizontal {
+    width: 0.4rem;
+}
+
+.app-top-border-width {
+    height: 3rem;
+}
+
+.app-borders-window {
+    background-color: rgba(64, 158, 254, 0.27);
+}
+
+.app-borders-border-radius {
+    border-radius: 0.5rem;
+}
+
+.app-borders-border-radius::after {
+    border-radius: 0.5rem;
+}
+
+.app-borders-border-radius-smaller::after {
+    border-radius: calc(0.5rem - 0.1rem);
+}
+
+.app-borders-texture-blur {
+    filter: blur(3px);
+}
+
+.app-borders-color-blur {
+    filter: blur(15px);
+}
+
+.app-borders-shadow {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-borders-window-texture {
+    background-image: url('./AeroGlassTexture.png');
+}
+
+.app-borders-blend-mode {
+    mix-blend-mode: overlay;
+}
+
+.app-borders-backdrop-filter {
+    backdrop-filter: blur(5px);
+}
+
+
+
+/* Outer Borders */
+.app-borders-light-outer-border-bg {
+    background-color: rgb(250, 251, 253);
+}
+
+.app-borders-light-outer-border {
+    background: linear-gradient(160deg, rgba(249,250,253,1) 0%, rgba(202,226,249,1) 15%, rgba(44,211,254,1) 100%);
+}
+
+.app-borders-light-outer-border-width {
+    border-width: 1.5px;
+}
+
+.app-borders-dark-outer-border-bg {
+    background-color: rgb(20, 52, 78);
+}
+
+/* .app-borders-dark-outer-border {
+    background: linear-gradient(160deg, rgba(20,52,78,1) 0%, rgba(16,36,53,1) 100%);
+} */
+
+.app-borders-dark-outer-border::after {
+    background: linear-gradient(160deg, rgba(20,52,78,1) 0%, rgba(16,36,53,1) 100%);
+}
+
+.app-borders-dark-outer-border-width::after {
+    padding: 1.5px;
+}
+
+/* Buttons */
+.button-height {
+    height: 2rem;
+}
+
+.button-minimize {
+    width: 2.05rem;
+}
+
+.button-maximize {
+    width: 2.05rem;
+}
+
+.button-close {
+    width: 2.05rem;
+}
+
+.control_button:not(:last-child) {
+    margin-right: var(--app_control_button_margin);
+}
+
+.button-dragbar-margin-left {
+    margin-left: 0;
+}
+
+.button-dragbar-margin-right {
+    margin-right: 1rem;
+}
+
+/* Primary Buttons */
+.primary-button {
+    background: linear-gradient(180deg, rgba(193,211,230,1) 0%, rgba(190,211,232,1) 45%, rgba(152,177,204,1) 50%, rgba(185,209,234,1) 100%);
+}
+
+.primary-button-hover {
+    background: linear-gradient(180deg, rgba(170,213,243,1) 0%, rgba(125,190,233,1) 45%, rgba(45,115,163,1) 50%, rgba(36,198,235,1) 100%);
+}
+
+.primary-button-active {
+    background: linear-gradient(180deg, rgba(127,154,172,1) 0%, rgba(90,116,138,1) 35%, rgba(32,59,82,1) 40%, rgba(103,230,228,1) 100%);
+}
+
+/* Destructive Buttons */
+.destructive-button {
+    background: linear-gradient(180deg, rgba(233,169,156,1) 0%, rgba(222,146,132,1) 45%, rgba(184,67,44,1) 50%, rgba(213,133,118,1) 100%);
+}
+
+.destructive-button-hover {
+    background: linear-gradient(180deg, rgba(251,199,190,1) 0%, rgba(250,164,149,1) 45%, rgba(210,35,2,1) 50%, rgba(234,161,87,1) 100%);
+}
+
+.destructive-button-active {
+    background: linear-gradient(180deg, rgba(201,158,135,1) 0%, rgba(187,129,104,1) 45%, rgba(128,23,0,1) 50%, rgba(188,142,72,1) 100%);
+}
+
+/* Control Buttons */
+.control-buttons-height {
+    height: 1.1rem;
+}
+
+.control-buttons-margin {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.control-button-border {
+    border-width: 1px;
+}
+
+/* Control Button Icons */
+.primary-control-button-border {
+    background-image: url('./control_buttons/primary_button_border.svg');
+}
+
+.destructive-control-button-border {
+    background-image: url('./control_buttons/destructive_button_border.svg');
+}
+
+.minimize_button:hover .primary_button_border, .maximize_button:hover .primary_button_border {
+    background-image: url('./control_buttons/primary_button_border_hovered.svg');
+}
+
+.destructive-control-button-border:hover {
+    background-image: url('./control_buttons/destructive_button_border.svg');
+}
+
+/* Control Button Radius */
+.minimize-border-radius {
+    border-radius: 0.2rem;
+}
+
+.maximize-border-radius {
+    border-radius: 0.2rem;
+}
+
+.close-border-radius {
+    border-radius: 0.2rem;
+}
+
+/* Button Icons */
+.button-icon-border-color {
+    border-color: #535666;
+}
+
+.button-icon-gradient {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(215,215,215,1) 100%);
+}
+
+/* Control Button Icons */
+.button-icon-minimize {
+    background-image: url('control_buttons/minimize.svg');
+}
+
+.button-icon-maximize {
+    background-image: url('control_buttons/maximize.svg');
+}
+
+.button-icon-close {
+    background-image: url('control_buttons/close.svg');
+}
+
+.button-icon-unmaximize {
+    background-image: url('control_buttons/unmaximize.svg');
+}

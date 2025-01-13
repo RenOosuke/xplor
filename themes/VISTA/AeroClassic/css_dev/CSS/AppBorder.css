@@ -1,0 +1,34 @@
+.border_shadow {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2) !important;
+}
+
+.app_borders, .outer_border {
+    border-radius: .5rem; /* APP border-radius*/
+}
+
+.app_borders {
+    border-width: 1.7px; /* APP border width*/
+}
+
+.outer_border::after {
+    padding: 1.7px; /* APP border width*/
+    background: linear-gradient(160deg, rgba(20,52,78,1) 0%, rgba(16,36,53,1) 100%);
+    border-radius: .5rem; /* APP border-radius*/
+}
+
+.texture_layer {
+    background-image: url('./AeroGlassTexture.png');
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.color_layer {
+    background: rgba(64, 158, 254, 0.27);
+    background-blend-mode: overlay; 
+}
+
+.color_layer::after {
+    padding: 1.5px;
+    background: linear-gradient(160deg, rgba(249,250,253,1) 0%, rgba(202,226,249,1) 15%, rgba(44,211,254,1) 100%);
+    border-radius: calc(.5rem + .1rem);
+}

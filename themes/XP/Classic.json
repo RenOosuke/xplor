@@ -1,0 +1,47 @@
+{
+    "bg": {
+        "hovered_item": "#316ac5",
+        "selected_file": "#316ac5",
+        "command_bar":  "#efede0",
+        "toolbar":  "#efede0",
+        "navigation_pane": "linear-gradient(rgb(123, 162, 231) 0%, rgb(99, 117, 214) 100%)"
+    },
+    "text": {
+        "hovered_item": "#fff",
+        "context_menu_item": "#000000"
+    },
+    "border_color": {
+        "context_menu_separator": "#ceccc3"
+    },
+    "border": {
+        "command_bar": {
+            "top": "none",
+            "left": "none",
+            "right": "none",
+            "bottom": "1px solid #d8d2bd"
+        },
+        "toolbar": {
+            "top": "1px solid #fff",
+            "left": "none",
+            "right": "none",
+            "bottom": "1px solid #d8d2bd"
+        } 
+    },
+    "app_borders": {
+        "vertical_border_width": ".4rem",
+        "horizontal_border_width": ".4rem",
+        "top_border_width": "2rem",
+        "window_color": "rgba(64, 158, 254, 0.27)",
+        "border_radius": ".5rem",
+        "texture_blur": "blur(3px)",
+        "color_blur": "blur(15px)",
+        "shadow": "inset 0 0 10px rgba(0, 0, 0, 0.2)",
+        "window_texture": "AeroGlassTexture.png",
+        "blend_mode": "overlay",
+        "backdrop_filter": "blur(5px)",
+        "light_outer_border_bg": "rgb(250,251,253)",
+        "light_outer_border": "linear-gradient(160deg, rgba(249,250,253,1) 0%, rgba(202,226,249,1) 15%, rgba(44,211,254,1) 100%)", 
+        "dark_outer_border_bg": "rgb(20,52,78)",
+        "dark_outer_border": "linear-gradient(160deg, rgba(20,52,78,1) 0%, rgba(16,36,53,1) 100%)"
+    }
+}

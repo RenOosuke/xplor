@@ -1,0 +1,30 @@
+{
+    "bg": {
+        "hovered_item": "#316ac5",
+        "selected_file": "#316ac5",
+        "command_bar":  "#efede0",
+        "toolbar":  "#efede0",
+        "navigation_pane": "linear-gradient(rgb(123, 162, 231) 0%, rgb(99, 117, 214) 100%)"
+    },
+    "text": {
+        "hovered_item": "#fff",
+        "context_menu_item": "#000000"
+    },
+    "border_color": {
+        "context_menu_separator": "#ceccc3"
+    },
+    "border": {
+        "command_bar": {
+            "top": "none",
+            "left": "none",
+            "right": "none",
+            "bottom": "1px solid #d8d2bd"
+        },
+        "toolbar": {
+            "top": "1px solid #fff",
+            "left": "none",
+            "right": "none",
+            "bottom": "1px solid #d8d2bd"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="minimize_icon" viewBox="0 0 533 288" ry="12" rx="12">
+  <defs>
+    <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+			<stop offset="0%" style="stop-color: rgba(255,255,255,1); stop-opacity: 1;" />
+			<stop offset="100%" style="stop-color: rgba(215,215,215,1); stop-opacity: 1;" />
+		</linearGradient>
+  </defs>
+  
+    <path d="
+M 175 67 H 223 L 259 113 L 292 66 H 341 L 358 88 L 293 145 L 355 197 L 343 220 H 291 L 258 170 L 225 219 H 178 L 164 202 L 224 144 L 165 95 Z 
+  "
+  fill="url(#icon-gradient)" 
+  fill-rule="evenodd" stroke="#535666" stroke-width="12" />
+  
+	<rect class="outline_highlight"
+        stroke="rgba(255, 255, 255, 0.45)"
+        stroke-width="16" 
+        fill="transparent" 
+        y="24" x="24"
+        width="485"
+        height="240"
+        ry="20" 
+        rx="20" />
+
+</svg>

@@ -2,4 +2,10 @@
 /public/build/
 
 .DS_Store
-/NW_Cache/nwjs-sdk-v0.15.4-win-ia32
+/NW_Cache
+/BuiltApp
+/DevFiles
+
+/appname.txt
+/public/scripts_compiled/main
+/public/scripts_compiled/modules

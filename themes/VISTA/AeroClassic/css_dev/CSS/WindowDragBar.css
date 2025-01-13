@@ -1,0 +1,103 @@
+.control_bar {
+    height: 3rem;
+    padding-left: none;
+    padding-right: 1rem;
+}
+
+.control_buttons {
+    height: 1.1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.minimize_icon {
+    background-image: url('control_buttons/minimize.svg');
+}
+
+.maximize_icon {
+    background-image: url('control_buttons/maximize.svg');
+}
+
+.unmaximize_icon {
+    background-image: url('control_buttons/unmaximize.svg');
+}
+
+.close_icon {
+    background-image: url('control_buttons/close.svg');
+}
+
+.minimize_button:hover .primary_button_border, .maximize_button:hover .primary_button_border {
+    background-image: url('./control_buttons/primary_button_border_hovered.svg');
+}
+
+.primary_button_border {
+    /* background-size: cover; */
+    background-image: url('./control_buttons/primary_button_border.svg');
+}
+
+.destructive_button_border {
+    /* background-size: cover; */
+    background-image: url('./control_buttons/destructive_button_border.svg');
+}
+
+.close_button:hover {
+    background-image: url('./control_buttons/destructive_button_border.svg');
+}
+
+
+.control_button:not(:last-child) {
+    margin-right: .35rem;
+}
+
+.minimize_button {
+    width: 2.05rem;
+    border-radius: .2rem;
+}
+
+.minimize_button .element_border_highlight::after {
+    border-radius: .2rem;
+}
+
+.minimize_button, .maximize_button {
+    background: linear-gradient(180deg, rgba(193,211,230,1) 0%, rgba(190,211,232,1) 45%, rgba(152,177,204,1) 50%, rgba(185,209,234,1) 100%);
+}
+
+.minimize_button:hover, .maximize_button:hover {
+    background: linear-gradient(180deg, rgba(170,213,243,1) 0%, rgba(125,190,233,1) 45%, rgba(45,115,163,1) 50%, rgba(36,198,235,1) 100%);
+}
+
+.minimize_button:active, .maximize_button:active {
+    background: linear-gradient(180deg, rgba(127,154,172,1) 0%, rgba(90,116,138,1) 35%, rgba(32,59,82,1) 40%, rgba(103,230,228,1) 100%);
+}
+
+.maximize_button::after {
+    background: url("control_buttons/primary_button_border.svg");
+}
+
+.maximize_button {
+    width: 2.05rem;
+    border-radius: .2rem;
+}
+
+.maximize_button::after {
+    border-radius: .2rem;
+}
+
+.close_button {
+    width: 2.05rem;
+    background: linear-gradient(180deg, rgba(233,169,156,1) 0%, rgba(222,146,132,1) 45%, rgba(184,67,44,1) 50%, rgba(213,133,118,1) 100%);
+    border-radius: .2rem;
+}
+
+.close_button:hover {
+    background: linear-gradient(180deg, rgba(251,199,190,1) 0%, rgba(250,164,149,1) 45%, rgba(210,35,2,1) 50%, rgba(234,161,87,1) 100%);
+}
+
+.close_button:active {
+    background: linear-gradient(180deg, rgba(201,158,135,1) 0%, rgba(187,129,104,1) 45%, rgba(128,23,0,1) 50%, rgba(188,142,72,1) 100%);
+}
+
+.close_button::after {
+    background: url("control_buttons/destructive_button_border.svg");
+    border-radius: .2rem;
+}

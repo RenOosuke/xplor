@@ -1,0 +1,12 @@
+.command_bar {
+    background-color: #efede0; /* --command_bar_bg */
+    border-bottom: 1px solid #d8d2bd; /* --command_bar_bottom */
+    border-top: none; /* --command_bar_top */
+    border-left: none; /* --command_bar_left */
+    border-right: none; /* --command_bar_right */
+}
+
+.single_tab_button:hover {
+    background-color: #316ac5; /* --hovered_item_bg */
+    color: #fff; /* --hovered_item_color */
+}

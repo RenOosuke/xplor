@@ -1,0 +1,80 @@
+{
+    "bg": {
+        "hovered_item": "#316ac5",
+        "selected_file": "#316ac5",
+        "command_bar":  "#efede0",
+        "toolbar":  "#efede0",
+        "navigation_pane": "linear-gradient(rgb(123, 162, 231) 0%, rgb(99, 117, 214) 100%)"
+    },
+    "text": {
+        "hovered_item": "#fff",
+        "context_menu_item": "#000000"
+    },
+    "border_color": {
+        "context_menu_separator": "#ceccc3",
+        "element_highlight": "rgba(255, 255, 255, 0.75)",
+        "element_shadow": "rgba(0, 0, 11, 1)"
+    },
+    "border": {
+        "command_bar": {
+            "top": "none",
+            "left": "none",
+            "right": "none",
+            "bottom": "1px solid #d8d2bd"
+        },
+        "toolbar": {
+            "top": "1px solid #fff",
+            "left": "none",
+            "right": "none",
+            "bottom": "1px solid #d8d2bd"
+        } 
+    },
+    "app_borders": {
+        "vertical_border_width": ".4rem",
+        "horizontal_border_width": ".4rem",
+        "top_border_width": "3rem",
+        "window_color": "linear-gradient(178deg, rgba(152,180,208,1) 0%, rgba(219,231,244,1) 23%, rgba(185,209,234,1) 100%)",
+        "border_radius": ".5rem",
+        "texture_blur": "blur(3px)",
+        "color_blur": "blur(15px)",
+        "shadow": "inset 0 0 10px rgba(0, 0, 0, 0.2)",
+        "window_texture": "",
+        "blend_mode": "overlay",
+        "backdrop_filter": "blur(5px)",
+        "light_outer_border_bg": "rgb(250,251,253)",
+        "light_outer_border": "linear-gradient(160deg, rgba(249,250,253,1) 0%, rgba(202,226,249,1) 15%, rgba(44,211,254,1) 100%)",
+        "light_outer_border_width": "1px",
+        "dark_outer_border_bg": "rgb(20,52,78)",
+        "dark_outer_border": "linear-gradient(160deg, rgba(20,52,78,1) 0%, rgba(16,36,53,1) 100%)",
+        "button_height": "2rem",
+        "minimize_button_width": "2.05rem",
+        "maximize_button_width": "2.05rem",
+        "close_button_width": "2.05rem",
+        "control_button_margin": ".35rem",
+        "dragbar_left_margin": "",
+        "dragbar_right_margin": "1rem",
+        "primary_button_bg": "linear-gradient(180deg, rgba(193,211,230,1) 0%, rgba(190,211,232,1) 45%, rgba(152,177,204,1) 50%, rgba(185,209,234,1) 100%)",
+        "primary_button_hovered_bg": "linear-gradient(180deg, rgba(170,213,243,1) 0%, rgba(125,190,233,1) 45%, rgba(45,115,163,1) 50%, rgba(36,198,235,1) 100%)",
+        "primary_button_active_bg": "linear-gradient(180deg, rgba(127,154,172,1) 0%, rgba(90,116,138,1) 35%, rgba(32,59,82,1) 40%, rgba(103,230,228,1) 100%)",
+        "destructive_button_bg": "linear-gradient(180deg, rgba(233,169,156,1) 0%, rgba(222,146,132,1) 45%, rgba(184,67,44,1) 50%, rgba(213,133,118,1) 100%)",
+        "destructive_button_hovered_bg": "linear-gradient(180deg, rgba(251,199,190,1) 0%, rgba(250,164,149,1) 45%, rgba(210,35,2,1) 50%, rgba(234,161,87,1) 100%)",
+        "destructive_button_active_bg": "linear-gradient(180deg, rgba(201,158,135,1) 0%, rgba(187,129,104,1) 45%, rgba(128,23,0,1) 50%, rgba(188,142,72,1) 100%)",
+        "control_buttons_height": "1.1rem",
+        "control_buttons_margin_top": "auto",
+        "control_buttons_margin_bottom": "auto",
+        "control_button_border_width": "1px",
+        "control_button_primary_outer_border": "control_buttons\\primary_button_border.svg",
+        "control_button_destructive_outer_border": "control_buttons\\destructive_button_border.svg",
+        "control_button_primary_outer_border_hovered": "control_buttons\\primary_button_border_hovered.svg",
+        "control_button_destructive_outer_border_hovered": "control_buttons\\destructive_button_border.svg",
+        "minimize_border_radius": ".2rem",
+        "maximize_border_radius": ".2rem",
+        "close_border_radius": ".2rem",
+        "button_icon_border_color": "#535666",
+        "button_icon_gradient": "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(215,215,215,1) 100%)",
+        "minimize_icon": "control_buttons\\minimize.svg",
+        "maximize_icon": "control_buttons\\maximize.svg",
+        "close_icon": "control_buttons\\close.svg",
+        "unmaximize_icon": "control_buttons\\unmaximize.svg"
+    }
+}

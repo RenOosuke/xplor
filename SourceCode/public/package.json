@@ -4,6 +4,13 @@
     "main": "/public/index.html",
     "dependencies": {
     },
-    "DEV": false
+    "DEV": false,
+    "window": {
+      "transparent": false,
+      "frame": false,
+      "width": 2000,
+      "height": 1200
+    },
+    "node-remote": "<all_urls>"
   }
   

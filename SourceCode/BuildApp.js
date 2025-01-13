@@ -1,9 +1,10 @@
+require('dotenv').config();
 // #DOCUMENT_THIS_FILE
-const SDK = false;
+const SDK = true;
 // TO OPTIMIZE DOWNLOAD URLS 
 // #NWBUILD_DOWNLOAD_OPTIMIZE
-const projectName = 'XPlor';
-const versionNumber = '0.15.4';
+const projectName = process.env.APPLICATION_NAME;
+const versionNumber = '' || process.env.NWJS_VERSION;
 const platform = 'win'
 const fs = require('fs');
 const path = require('path');
@@ -11,10 +12,24 @@ const child_process = require('child_process');
 const decompress = require('decompress');
 
 const NWVersions = {
+    '0.12.3': {
+        sdk: {
+            win: {
+                url: 'https://dl.nwjs.io/v0.12.3/nwjs-v0.12.3-win-ia32.zip',
+                name: 'nwjs-v0.12.3-win-ia32'
+            }
+        },
+        normal: {
+            win: {
+                url: 'https://dl.nwjs.io/v0.12.3/nwjs-v0.12.3-win-ia32.zip',
+                name: 'nwjs-v0.12.3-win-ia32'
+            }
+        }
+    },
     '0.15.4': {
         sdk: {
             win: {
-                url: 'https://dl.nwjs.io/v0.15.4/nwjs-sdk-symbol-v0.15.4-win-ia32.7z',
+                url: 'https://dl.nwjs.io/v0.15.4/nwjs-sdk-v0.15.4-win-ia32.7z',
                 name: 'nwjs-sdk-v0.15.4-win-ia32'
             }
         },
@@ -76,6 +91,24 @@ const copyPath = (dirPath, destPath, dontCheckFilter) => {
 let buildAppPath = path.resolve(`${__dirname}/../BuiltApp`);
 let projectExePath = path.join(buildAppPath, projectName);
 let nwPackagePath = path.join(projectExePath, 'package.nw');
+let sourceThemesPath = path.resolve(`${__dirname}/../themes`);
+// let buildThemesPath = path.join(projectExePath, 'themes');
+
+const cleanUpBuild = () => {
+    let content = fs.readdirSync(buildAppPath, {
+        withFileTypes: true
+    });
+
+    content.forEach(dir => {
+        let _path = path.join(dir.parentPath, dir.name);
+
+        if(dir.isDirectory()) {
+            fs.rmSync(_path, { recursive: true, force: true });
+        } else {
+            fs.unlinkSync(_path);
+        }
+    })
+}
 
 const copyProjectFiles = () => {
     createIfNotExists(nwPackagePath);
@@ -86,6 +119,7 @@ const copyProjectFiles = () => {
     
     let packageJsonPath = path.join(publicPath, 'package.json');
     copyPath(packageJsonPath, nwPackagePath, true);
+    copyPath(sourceThemesPath, projectExePath, true);
 }
 
 const installNPMPackages = () => {
@@ -101,6 +135,9 @@ let buildVersionParams = NWVersions[versionNumber][SDK ? 'sdk' : 'normal'][platf
 let cacheFileName = buildVersionParams.name;
 let NWCacheFilePath = path.join(NWCacheFolderPath, cacheFileName)+'.zip';
 
+const openFolder = () => {
+    child_process.exec(`explorer /select, ${projectExePath}`)
+};
 
 const checkForNWCache = async () => {
     const unzipNW = async () => {
@@ -130,7 +167,9 @@ const checkForNWCache = async () => {
 } 
 
 (async ()=> {
+    cleanUpBuild();
     copyProjectFiles();
     installNPMPackages();
     await checkForNWCache();
+    openFolder();
 })()
